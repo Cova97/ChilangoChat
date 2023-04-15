@@ -5,7 +5,6 @@ import os
 
 load_dotenv()
 
-# una vez cargados los valores, podemos usarlos
 API_KEY = os.getenv("FLASK_OPEN_AI_KEY")
 
 openai.api_key = API_KEY
