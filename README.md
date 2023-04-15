@@ -1,3 +1,5 @@
 # Prueba de OPEN AI API. ChatGPT Chilango
 
-Descripción blabls
+Descripción 
+
+Chat de OpenAI estilo Chilango CDMX
