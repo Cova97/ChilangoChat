@@ -1,22 +1,22 @@
 from flask import Flask, render_template, request, jsonify
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import openai
 import os 
 
-load_dotenv()
+#load_dotenv()
 
 API_KEY = os.getenv("FLASK_OPEN_AI_KEY")
 
 openai.api_key = API_KEY
 
-preamble = "Responde como chilango"
+preamble = "Responde como chilango."
 
 def magic(p):
     completion = openai.Completion.create(
         model = "text-davinci-003",
-        prompt = f"{preamble} {p}",
+        prompt = f"{preamble} {p}.",
         max_tokens = 500,
-        temperature = 0.0
+        temperature = 0.5
     )
     return completion.choices[0].text
 
