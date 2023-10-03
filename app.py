@@ -4,6 +4,7 @@ import openai
 import os 
 
 #load_dotenv()
+# Cometario de prueba para su despliegue
 
 API_KEY = os.getenv("FLASK_OPEN_AI_KEY")
 
